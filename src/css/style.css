@@ -1,0 +1,140 @@
+body{
+    min-height: 100vh;
+    background-color: var(--dark);
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.card {
+    max-width: 390px;
+    background-color: var(--neutral-dark);
+    border-radius: 20px;
+    padding: 25px;
+    margin: 20px;
+}
+
+.card .star-image{
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    background-color: hsl(213, 19%, 23%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.card .star-image img{
+    height: 15px;
+    width: 15px;
+}
+
+.card .content .title{
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.card .content .text{
+    color: var(--neutral-soft);
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.card .rating{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.card .rating .rating-value{
+    padding: 15px;
+    background-color: hsl(213, 19%, 23%);
+    color: var(--neutral);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+.card .rating .rating-value:hover{
+    background-color: var(--primary);
+    color: var(--neutral-light);
+    cursor: pointer;
+}
+
+.card .btn-submit{
+    width: 100%;
+    border: none;
+    border-radius: 100px;
+    background-color: var(--primary);
+    color: var(--neutral-light);
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.card .btn-submit:hover{
+    background-color: var(--neutral-light);
+    color: var(--primary);
+    cursor: pointer;
+}
+
+.card .acknowledgment{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card .acknowledgment img{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.card .acknowledgment .rating-result{
+    margin-bottom: 20px;
+    padding: 5px 13px;
+    font-size: 0.8rem;
+    color: var(--primary);
+    border-radius: 100px;
+    background-color: hsl(213, 19%, 23%);
+}
+
+.card .acknowledgment .title{
+    margin-bottom: 10px;
+}
+
+.card .acknowledgment .appreciation-text{
+    color: var(--neutral-soft);
+    font-size: 15px;
+}
+
+.card .rating .selected{
+    background-color: var(--neutral);
+    color: var(--neutral-light);
+}
+.card .hide{
+    display: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
